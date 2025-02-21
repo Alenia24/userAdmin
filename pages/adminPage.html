@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add"
+    />
+    <link rel="stylesheet" href="../styles/adminPage.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div style="padding: 0" class="col-md-2">
+          <div class="side">
+            <div class="logo">
+              <h1 style="font-size: 80px">💎</h1>
+              <h2 style="font-size: 20px">Jadora Jewels</h2>
+            </div>
+            <div class="nav-links">
+              <a style="display: flex; font-size: 20px;" href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M264-216h96v-240h240v240h96v-348L480-726 264-564v348Zm-72 72v-456l288-216 288 216v456H528v-240h-96v240H192Zm288-327Z"/></svg>Home</a>
+              <a style="display: flex; font-size: 20px;" href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M144-528v-288h288v288H144Zm0 384v-288h288v288H144Zm384-384v-288h288v288H528Zm0 384v-288h288v288H528ZM216-600h144v-144H216v144Zm384 0h144v-144H600v144Zm0 384h144v-144H600v144Zm-384 0h144v-144H216v144Zm384-384Zm0 240Zm-240 0Zm0-240Z"/></svg>Dashboard</a>
+              <a style="display: flex; font-size: 20px;" href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-80q-33 0-56.5-23.5T120-160v-451q-18-11-29-28.5T80-680v-120q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v120q0 23-11 40.5T840-611v451q0 33-23.5 56.5T760-80H200Zm0-520v440h560v-440H200Zm-40-80h640v-120H160v120Zm200 280h240v-80H360v80Zm120 20Z"/></svg>Products</a>
+              <a style="display: flex; font-size: 20px;" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#e8eaed"
+                >
+                  <path
+                    d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"
+                  />
+                </svg>Orders</a>
+              <a style="display: flex; font-size: 20px;" href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm720 0v-120q0-44-24.5-84.5T666-434q51 6 96 20.5t84 35.5q36 20 55 44.5t19 53.5v120H760ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm400-160q0 66-47 113t-113 47q-11 0-28-2.5t-28-5.5q27-32 41.5-71t14.5-81q0-42-14.5-81T544-792q14-5 28-6.5t28-1.5q66 0 113 47t47 113ZM120-240h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0 320Zm0-400Z"/></svg>Customers</a>
+              
+            </div>
+            <div class="user-profile">
+              <div class="profile-picture">👤</div>
+              <div class="user-name">
+                <p style="padding: 0; margin: 0">Brittany Sanchez</p>
+              </div>
+              <div class="user-title">
+                <p style="padding: 0; margin: 0">Product Manager</p>
+              </div>
+              <div class="logout-btn">
+                <a href="">Log Out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="padding: 0" class="col-md-10">
+          <div class="main">
+            <div class="header-container">
+              <div class="page-title">
+                <h1 style="font-weight: bold; padding: 0; margin: 0" class="h1">
+                  Product Inventory
+                </h1>
+              </div>
+
+              <button id="responsive-btn" type="button" class="btn btn-primary">
+                <span class="material-symbols-outlined"> add </span>
+                <span>Product</span>
+              </button>
+            </div>
+
+            <div class="product-inventory">
+              <div class="total-products">
+                <div class="total-products-title">
+                  <h5 class="inventory-product-title">Total Products</h5>
+                </div>
+                <div class="total-products-number">
+                  <h5 class="inventory-product-number">250</h5>
+                </div>
+              </div>
+
+              <div class="out-of-stock">
+                <div class="out-of-stock-title">
+                  <h5 class="inventory-product-title">Out of Stock</h5>
+                </div>
+                <div class="out-of-stock-number">
+                  <h5 class="inventory-product-number">20</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-table">
+              <div class="table-responsive">
+                <table class="table table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">PRODUCT NAME</th>
+                      <th scope="col">CATEGORY</th>
+                      <th scope="col">PRICE</th>
+                      <th scope="col">INVENTORY</th>
+                      <th scope="col">DATE ADDED</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Heart Shaped Bangle</td>
+                      <td>Bracelet</td>
+                      <td>$250.00</td>
+                      <td>20</td>
+                      <td>02/23/2024</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Arrow Love Bracelet</td>
+                      <td>Bangle</td>
+                      <td>$153.00</td>
+                      <td>5</td>
+                      <td>02/14/2024</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Lock and Key Charm</td>
+                      <td>Charm</td>
+                      <td>$80.00</td>
+                      <td>20</td>
+                      <td>03/23/2024</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Heart Shaped Bangle</td>
+                      <td>Bracelet</td>
+                      <td>$250.00</td>
+                      <td>20</td>
+                      <td>02/23/2024</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Arrow Love Bracelet</td>
+                      <td>Bangle</td>
+                      <td>$153.00</td>
+                      <td>5</td>
+                      <td>02/14/2024</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">6</th>
+                      <td>Lock and Key Charm</td>
+                      <td>Charm</td>
+                      <td>$80.00</td>
+                      <td>20</td>
+                      <td>03/23/2024</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">7</th>
+                      <td>Heart Shaped Bangle</td>
+                      <td>Bracelet</td>
+                      <td>$250.00</td>
+                      <td>20</td>
+                      <td>02/23/2024</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">8</th>
+                      <td>Arrow Love Bracelet</td>
+                      <td>Bangle</td>
+                      <td>$153.00</td>
+                      <td>5</td>
+                      <td>02/14/2024</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <footer>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

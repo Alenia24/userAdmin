@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", serif;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row {
+  width: 100vw;
+  height: 100vh;
+}
+
+.side,
+.main {
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  height: 100vh;
+}
+
+.update-profile {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.address-form {
+  margin-left: auto;
+}
+
+.profile-form, .address-form {
+  margin: 40px;
+}
+
+.profile-table {
+  margin-top: auto;
+
+}
+.side {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  background-color: #14213d;
+  color: white;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 60px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-bottom: auto;
+}
+
+.nav-links a {
+  display: flex;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  padding: 4px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #2b447a;
+}
+
+.user-profile {
+  margin-bottom: 30px;
+}
+
+.profile-picture {
+  font-size: 40px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.logout-btn a {
+  text-decoration: none;
+  color: #ffc300;
+}
+
+.logout-btn a:hover {
+  color: #fca311;
+}
+
+.header-container,
+.product-inventory,
+.product-table,
+footer {
+  margin-bottom: auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: #14213d;
+  border: 1px solid #14213d;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.btn:hover {
+  background-color: #2b447a;
+  border: 1px solid #2b447a;
+  transition: all 200ms ease-in-out;
+}
+
+#responsive-btn {
+  white-space: normal;
+  display: flex;
+}
+
+label {
+  font-weight: bold;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.pagination a {
+  color: #14213d;
+  border: none;
+}
