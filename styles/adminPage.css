@@ -40,6 +40,7 @@ body {
   flex-direction: column;
   margin-left: 20px;
   margin-bottom: auto;
+  
 }
 
 .nav-links a {
@@ -48,6 +49,7 @@ body {
   color: white;
   padding: 4px;
   font-weight: 500;
+  font-size: 18px;
 }
 
 .nav-links a:hover {
