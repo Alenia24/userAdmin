@@ -1,88 +1,14 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 80px;
   font-family: "Inter", serif;
 }
 
-.container-fluid {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-.row {
-  width: 100vw;
-  height: 100vh;
-}
-
-.side,
 .main {
-  height: 100vh;
+  margin: 0 40px;
 }
 
-.side {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
-  background-color: #14213d;
+.nav-item a {
   color: white;
-}
-
-.logo {
-  text-align: center;
-  margin-bottom: 60px;
-  font-size: 60px;
-}
-
-.nav-links {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  margin-bottom: auto;
-  
-}
-
-.nav-links a {
-  text-align: left;
-  text-decoration: none;
-  color: white;
-  padding: 4px;
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.nav-links a:hover {
-  color: #2b447a;
-}
-
-.user-profile {
-  margin-bottom: 30px;
-}
-
-.profile-picture {
-  font-size: 40px;
-}
-
-.user-name {
-  font-weight: bold;
-}
-
-.logout-btn a {
-  text-decoration: none;
-  color: #ffc300;
-}
-
-.logout-btn a:hover {
-  color: #fca311;
-}
-
-.main {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  text-align: center;
-  padding: 30px;
 }
 
 .header-container,
@@ -149,6 +75,6 @@ footer {
 }
 
 .pagination a {
-    color: #14213d;
-    border: none;
+  color: #14213d;
+  border: none;
 }
